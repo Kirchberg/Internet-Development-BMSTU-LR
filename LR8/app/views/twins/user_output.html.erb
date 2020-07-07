@@ -1,0 +1,32 @@
+<h1>Table With Results.</h1>
+
+<h4 id = 'result'>
+  Number of iterations:
+  <%= @array_result.length %>
+</h4>
+
+<% if (@array_result.length == 0) %>
+  <h4>There's no twins!</h4>
+<% else %>
+  <table>
+    <tr>
+      <th colspan="2">Result</th>
+    </tr>
+
+    <tr>
+      <td>Count</td>
+      <td>Twins</td>
+    </tr>
+
+    <% @array_result.size.times do |iter| %>
+      <tr>
+        <td><%= iter+1 %></td>
+        <td><%= @array_result[iter].join(' ') %></td>
+      </tr>
+    <% end %>
+
+  </table>
+<% end %>
+
+<br>
+<%= link_to "Back To Main Page", :user_input %>

@@ -1,0 +1,17 @@
+<h1>Welcome To Main Page!</h1>
+<p>Here you need to enter one natural number!</p>
+
+<%= form_tag("/user_output", :method => "get") do %>
+  <table>
+
+    <tr>
+      <td><%= label_tag("Enter Natural Number") %></td>
+      <td><%= text_field_tag :user_number %></td>
+    </tr>
+
+    <tr>
+      <td colspan = '2'><%= submit_tag("Find Numbers") %></td>
+    </tr>
+
+  </table>
+<% end %>

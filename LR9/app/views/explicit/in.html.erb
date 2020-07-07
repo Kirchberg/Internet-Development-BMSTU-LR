@@ -1,0 +1,11 @@
+<h1>Welcome To Main Page!</h1>
+<p>Here you need to enter one natural number!</p>
+
+<div id="explicit__container">
+  <%= form_with id: 'explicit__form', method: :get, url: explicit_ajax_path do |form| %>
+    <%= form.number_field :m, placeholder: 'Enter Natural Number', min: 1 %>
+    <%= form.submit 'Find Numbers' %>
+  <% end %>
+
+  <p id="explicit__result"></p>
+</div>

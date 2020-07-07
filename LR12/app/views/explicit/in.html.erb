@@ -1,0 +1,17 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div class="row justify-content-center">
+  <div class="col-md-5">
+    <h1>Welcome To Main Page!</h1>
+    <p>Here you need to enter one natural number!</p>
+    <div id="explicit__container" class="row justify-content-center">
+      <%= form_with id: 'explicit__form', method: :get, url: explicit_ajax_path do |form| %>
+        <%= form.number_field :m, placeholder: 'Enter Natural Number', min: 1, value: nil %>
+        <%= form.submit 'Find Numbers' %>
+      <% end %>
+      <p id="explicit__result"></p>
+    </div>
+  </div>
+</div>

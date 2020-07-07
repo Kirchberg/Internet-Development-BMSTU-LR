@@ -1,0 +1,18 @@
+*{
+  font-family: monospace;
+}
+
+table {
+  border-collapse: collapse;
+  width: 275px;
+}
+
+table, tbody, th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#explicit__result, #explicit__container {
+  padding-top: 20px;
+}
