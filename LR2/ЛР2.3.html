@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+		  content="width=device-width, initial-scale=1"> 
+	<title>LR2.3</title>
+	<link rel="stylesheet" 
+			href="http://e-learning.bmstu.ru/moodle/pluginfile.php/7546/mod_folder/content/0/bootstrap.min.css">
+	<style>
+	
+		html {
+			position: relative;
+			min-height: 100%;
+		}
+		
+		body {
+			margin-bottom: 40px;
+			background-color: gray;
+		}
+		
+		footer {
+			 height: 40px;
+			 position: absolute;
+			 bottom: 0;
+			 width: 100%;
+		}
+
+	
+		.my-primary {
+			background-color: darkgreen;
+			color: black;
+		}
+		
+		main {
+			margin-top: 15px;
+		}
+		
+		.mainIdea{
+			color: red;
+			font-family: Cambria;
+			text-transform: uppercase;
+		}
+		
+		.colortext {
+			color: yellow;
+			font-family: Segoe UI;
+		}
+		
+		table {
+			border-collapse: collapse;
+		}
+
+		table, th, td {
+  			border: 1px solid black;
+		}
+		
+	</style>
+
+  </head>
+  <body>
+		<header>
+			 <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+				 <a class="navbar-brand" href="#">Navbar</a>
+				 <ul class="navbar-nav mr-auto">
+					 <li class="nav-item active">
+						 <a class="nav-link" href="#">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					 </li>
+					 <li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main class="container">
+			<div class="row">
+				 <div class="col-4">
+					 <img src=" http://e-learning.bmstu.ru/moodle/pluginfile.php/7546/mod_folder/content/0/avatar.jpg"
+					 alt="avatar" width="150" height="150">
+				 </div>
+				 <div class="col-8">
+					<p>Любой текст</p>
+				</div>
+			</div>
+				<div class="row">
+					 <div class="col-4">
+						<form name="/form_submit" method="get">
+
+							<table class="table table-bordered table-dark">
+								<tbody>
+								<tr>
+									<th scope="row">Login:</th>
+									<td><input class="form-control" type="text" name="flogin" placeholder="Enter login" /></td>
+								</tr>
+								
+								<tr>
+									<th scope="row">Password:</th>
+									<td><input class="form-control" type="text" name="fpassword" placeholder="Enter password"/></td>
+								</tr>
+								
+								<tr>
+									<th scope="row">Confirm your password:</th>
+									<td><input class="form-control" type="text" name="spassword" placeholder="Confirm your password"/></td>
+								</tr>
+								
+								<tr>
+									<th scope="row">Gender: </th>
+									<td>
+										<select class="form-control" id="exampleFormControlSelect1">
+											<option value="Male">Male</option>
+											<option value="Female">Female</option>
+										</select>
+									</td>
+								</tr>
+								
+								<tr>
+									<th scope="row">Press to submit:</th>
+									<td><input class="form-control" type = "submit" name="submit" /></td>
+								</tr>
+								</tbody>
+							</table>
+
+						</form>
+					 </div>
+					 <div class="col-4">
+						<table class="table table-bordered table-dark">
+							<thead>
+								<tr>
+      							  <th scope="col">Time</th>
+								  <th scope="col"> Subject</th>
+								</tr>
+							</thead>
+							<tbody>
+							<tr>
+							  <th scope="row">8:30-10:05</th>
+							  <td>PE</td>
+							  
+							</tr>
+							<tr>
+							  <th scope="row">10:15-11:50</th>
+							  <td>Data Base</td>
+							</tr>
+							<tr>
+							  <th scope="row">12:00-13:35</th>
+							  <td>English Language</td>
+							</tr>
+						  </tbody>
+						</table>
+					 </div>
+				</div>
+				 <div class="row">
+					<div class="col">
+						<h1>English translation of 1914, H. Rackham</h1>
+			
+						<p>But I must explain to you how all this <span class="colortext">mistaken idea</span> of denouncing pleasure</p>
+						<p>and praising pain was born and I will give you a complete account </p>
+						<p>of the system, and expound the actual teachings of the great</p>
+						<p>explorer of the <span class="mainIdea">truth, the master-builder</span> of human happiness.</p>
+						<p>No one rejects, dislikes, or avoids pleasure itself, because it is</p>
+						<p>pleasure, but <span class="colortext">because those who do not</span> know how to pursue pleasure rationally</p>
+						<p>encounter <span class="mainIdea">consequences that are extremely painful.</span></p>
+						<p>Nor again is there anyone who loves or pursues or desires to obtain pain</p>
+						<p>of itself, because it is <span class="colortext">pain, but because occasionally</span> circumstances</p>
+						<p>occur in which toil and pain can procure him some great pleasure.</p>
+						<p>To take a trivial example, which of us <span class="colortext">ever undertakes laborious physical exercise</span></p>
+					</div>
+				 </div>
+		</main>
+	
+		<footer class="my-primary">
+			<div class="container">
+				<p class="footer-text">Footer</p>
+			</div>
+		</footer>
+  </body>
+</html>

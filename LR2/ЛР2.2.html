@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset = "UTF-8">
+		<title> LR2.2 </title>
+		<style>
+
+			*{
+				font-family: monospace;
+  				box-sizing: border-box;
+			}
+
+			.d-table{
+			  display: table;
+			  width: 400px;
+			  border-collapse: collapse;
+			}
+
+			.d-tr{
+			  display: table-row;
+			}
+			.d-td {
+			  display: table-cell;
+			  text-align: center;
+			  border: 1px solid #ccc;
+			  vertical-align: middle;
+			}
+
+			.d-td:not(.no-p) {
+			  padding: 4px;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="d-table">
+		  <div class="d-tr">
+			<div class="d-td">Monday</div>
+		  </div>
+		  <div class="d-tr">
+			  <div class="d-td no-p">
+				  <div class="d-table">
+					  <div class="d-tr">
+						  <div class="d-td">8:30-10:05</div>
+						  <div class="d-td">PE</div>
+					  </div>
+					  <div class="d-tr">
+						  <div class="d-td">10:15-11:50</div>
+						  <div class="d-td">Data Base</div>
+					  </div>
+					  <div class="d-tr">
+						  <div class="d-td">12:00-13:35</div>
+						  <div class="d-td">English Language</div>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+		</div>
+	</body>
+
+</html>

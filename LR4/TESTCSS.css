@@ -1,0 +1,22 @@
+*{
+  font-family: monospace;
+}
+
+#product-table, #totalcost-table, #product-table-copy, #bin{
+  width: 300px;
+}
+
+table, h2 {
+  margin-top: 20px;
+  margin-left: 30px;
+  border-collapse: collapse;
+}
+
+table,tbody, th, td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+tr{cursor: pointer; transition: all .25s ease-in-out}
+.selected{background-color: #14B9D6; font-weight: bold; color: #fff;}

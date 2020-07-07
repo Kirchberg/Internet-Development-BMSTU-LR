@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="TESTCSS.css">
+    <title>LR4.1</title>
+  </head>
+  <body>
+    <script src = "TEST.js"></script>
+    <div>
+      <form name="reg-product" method="get">
+        <table>
+          <tr>
+            <th colspan="2">Registration Form</th>
+          </tr>
+          <tr>
+            <td>Product name: </td>
+            <td><input type="text" id="label-product" placeholder="Enter product name"></td>
+          </tr>
+          <tr>
+            <td>Product Price: </td>
+            <td><input type="number" id="price-product" placeholder="Enter price product"></td>
+          </tr>
+          <tr>
+            <td><input type="button" onclick= "Javascript:addInfo()"
+                        id="submit-product" value = "Add product"></td>
+            <td><input type="button" onclick= "Javascript:clearInfo()"
+                        id="clear-product" value = "Clear"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div>
+      <table id="product-table">
+        <tr>
+          <th>Product Name</th>
+          <th>Product Price</th>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <table id="totalcost-table">
+        <tr>
+          <th colspan="2">Сost Of Order</th>
+        </tr>
+        <tr>
+          <td>Total Value: </td>
+          <td id= "totalCostSumUp"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
